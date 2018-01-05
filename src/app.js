@@ -1,13 +1,16 @@
 import angular from "angular";
 import uiRouter from "@uirouter/angularjs";
-import ocLazyLoad from "oclazyload";
+import ngAnimate from "angular-animate";
+import uiBootstrap from "angular-ui-bootstrap";
 
 import "./assets/less/main.less";
 
 import AppRouting from "./configs/app.routing";
 
-import LoginComponent from "./components/login/login.component";
+import MainComponent from "./components/main/main.component";
+import ForceModalComponent from "./components/force-modal/force-modal.component";
 
-angular.module("rankmi", [uiRouter, ocLazyLoad])
-    .component("login", LoginComponent)
-    .config(AppRouting);
+angular.module("rankmi", [uiRouter, ngAnimate, uiBootstrap])
+	.component("main", MainComponent)
+	.component("forceModal", ForceModalComponent)
+	.config(AppRouting);

@@ -2,23 +2,13 @@ import forEach from "lodash/forEach";
 
 export default function ($stateProvider, $urlRouterProvider) {
     "ngInject";
-    $urlRouterProvider.otherwise("login");
-    $urlRouterProvider.when("", "login");
+    $urlRouterProvider.otherwise("/rkm-test");
+    $urlRouterProvider.when("", "/rkm-test");
     let states = [
         {
-            name: "login",
-            url: "/login",
-            component: "login"
-        },
-        {
-            name: "home.**",
-            url: "/home",
-            lazyLoad: $transition$ => {
-                let $ocLazyLoad = $transition$.injector().get("$ocLazyLoad");
-                return import("../modules/home/home.module").then(module => {
-                    $ocLazyLoad.inject(module.default);
-                });
-            }
+            name: "main",
+            url: "/rkm-test",
+            component: "main"
         }
     ];
 
