@@ -7,7 +7,7 @@
 Hola!, como candidatos, deberán pasar la siguiente prueba para seguir en el proceso de selección Rankmi
 deben hacer un fork de este repo en sus cuentas propias, en donde deben maquetar esta pantalla de nuestra plataforma:
 
-<img src="/test-pic.png"/>
+
 
 Esta prueba es 100% HTML y LESS, pueden ocupar bootstrap (está configurado en el repo).
 
