@@ -1,10 +1,10 @@
 import path from "path";
+import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import ExtractTextWebpackPlugin from "extract-text-webpack-plugin";
 
 export default {
-    entry: {
-        app: "./src/app.js"
-    },
+    entry: ["bootstrap-loader/extractStyles", "./src/app.js"],
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "scripts/[name].[hash].js"
@@ -17,18 +17,30 @@ export default {
             },
             {
                 test: /\.css$/,
-                use: [
-                    "style-loader",
-                    "css-loader"
-                ]
+                loader: ExtractTextWebpackPlugin.extract({
+                    fallback: "style-loader",
+                    use: "css-loader"
+                })
             },
             {
                 test: /\.less$/,
-                use: [
-                    "style-loader",
-                    "css-loader",
-                    "less-loader"
-                ]
+                loader: ExtractTextWebpackPlugin.extract({
+                    fallback: "style-loader",
+                    use: [
+                        "css-loader",
+                        "less-loader"
+                    ]
+                })
+            },
+            {
+                test: /\.scss$/,
+                loader: ExtractTextWebpackPlugin.extract({
+                    fallback: "style-loader",
+                    use: [
+                        "css-loader",
+                        "sass-loader"
+                    ]
+                })
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/,
@@ -47,14 +59,22 @@ export default {
             },
             {
                 test: /\.(woff2?|ttf|eot|otf)$/,
-                use: "file-laoder"
+                use: "file-loader"
             }
         ]
     },
-    plugins:[
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jQuery"
+        }),
         new HtmlWebpackPlugin({
             template: "src/index.html",
             inject: "body"
+        }),
+        new ExtractTextWebpackPlugin({
+            filename: 'styles/[name].[hash].css',
+            allChunks: true
         })
     ]
 }
