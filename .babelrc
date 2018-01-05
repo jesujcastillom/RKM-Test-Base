@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "ie >= 9"
+          ]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "dynamic-import-webpack",
+    [
+      "angularjs-annotate",
+      {
+        "explicitOnly": true
+      }
+    ]
+  ]
+}

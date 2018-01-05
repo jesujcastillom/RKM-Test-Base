@@ -1,0 +1,45 @@
+{
+  "name": "rankmi-front-end",
+  "version": "1.0.0",
+  "description": "Rankmi's test for candidates",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesujcastillom/RKM-Test-Base.git"
+  },
+  "keywords": [
+    "Rankmi"
+  ],
+  "author": "Jesu Castillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesujcastillom/RKM-Test-Base/issues"
+  },
+  "homepage": "https://github.com/jesujcastillom/RKM-Test-Base#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-angularjs-annotate": "^0.8.2",
+    "babel-plugin-dynamic-import-webpack": "^1.0.2",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.12",
+    "angular": "^1.6.8",
+    "lodash": "^4.17.4",
+    "oclazyload": "^1.1.0"
+  }
+}
