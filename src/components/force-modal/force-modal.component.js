@@ -8,7 +8,7 @@ class ForceModalComponent {
 	}
 
 	$onInit() {
-		this.$timeout(() => this.close(), 3000);
+		this.$timeout(() => this.close(), 2000);
 	}
 }
 
