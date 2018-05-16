@@ -1,5 +1,5 @@
 <div align="center">
-<img src="/src/assets/images/logo.svg" width="33%"/>
+<img src="rankmi.svg" width="33%"/>
 </div>
 
 # Prueba front end (HTML + LESS)
