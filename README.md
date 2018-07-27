@@ -1,21 +1,19 @@
 <div align="center">
-<img src="/src/assets/images/logo.svg" width="33%"/>
+<img src="rankmi.svg" width="33%"/>
 </div>
 
-# Prueba front end (HTML + LESS)
+# Prueba front end developer
 
 Hola!, como candidatos, deberán pasar la siguiente prueba para seguir en el proceso de selección Rankmi
-deben hacer un fork de este repo en sus cuentas propias, en donde deben maquetar esta pantalla de nuestra plataforma:
+deben hacer un fork de este repo en sus cuentas propias, en donde deben implementar lo documentado en las [especificaciones
+de la prueba](/Project%20proposal.pdf)
 
-<img src="/test-pic.png"/>
 
-Esta prueba es 100% HTML y LESS, pueden ocupar bootstrap (está configurado en el repo).
+## Instalación:
 
-Para correr la aplicación base deben ejecutar dos comandos:
+- Debes tener NodeJS y NPM instalado
+- Clonar el proyecto
+- Desde la raíz del proyecto correr: **npm install** y luego **npm start**
 
-### npm install
 
-### npm start
-
-El archivo donde deben hacer los cambios para verlos reflejados 
-automaticamente es [este](/src/components/main/main.component.html)
+<img src="https://i.ytimg.com/vi/l51eBI2v-hY/maxresdefault.jpg" width="100%"/>
