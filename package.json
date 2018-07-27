@@ -22,6 +22,7 @@
   "devDependencies": {
     "@types/angular": "^1.6.45",
     "@types/angular-ui-bootstrap": "^0.13.46",
+    "angular-toasty": "^1.0.5",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-angularjs-annotate": "^0.8.2",
@@ -47,12 +48,17 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "@types/moment-timezone": "^0.5.6",
     "@uirouter/angularjs": "^1.0.17",
     "angular": "^1.7.0",
     "angular-animate": "^1.7.0",
     "angular-ui-bootstrap": "^2.5.6",
     "bootstrap": "^4.1.1",
     "font-awesome": "^4.7.0",
-    "lodash": "^4.17.10"
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "pdfmake": "^0.1.37",
+    "html2canvas": "^1.0.0-alpha.12"
   }
 }
