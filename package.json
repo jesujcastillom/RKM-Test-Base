@@ -24,7 +24,7 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-angularjs-annotate": "^0.8.2",
-    "babel-plugin-dynamic-import-webpack": "^1.0.2",
+    "babel-plugin-dynamic-import-webpack": "^1.1.0",
     "babel-preset-env": "^1.6.1",
     "bootstrap-loader": "^2.2.0",
     "bootstrap-sass": "^3.3.7",
